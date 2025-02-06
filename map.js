@@ -9,6 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Fetch room data from Google Sheets API
+/*
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
@@ -22,8 +23,8 @@ fetch(apiUrl)
         });
     })
     .catch(error => console.error("Error fetching data:", error));
+*/
 
-/*
 fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
@@ -42,4 +43,4 @@ fetch(apiUrl)
         });
     })
     .catch(error => console.error("Error fetching data:", error));
-*/
+
