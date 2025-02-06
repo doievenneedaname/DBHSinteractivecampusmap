@@ -7,6 +7,6 @@ body {
     width: 90%;
     height: 600px;
     margin: auto;
-    border: 7px solid purple;
+    border: 7px solid black;
     border: 0 0 0 5px yellow inset;
 }
