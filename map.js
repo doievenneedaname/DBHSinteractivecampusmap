@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Fetch room data from Google Sheets API
-/*fetch(apiUrl)
+fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
         data.forEach(room => {
@@ -22,8 +22,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         });
     })
     .catch(error => console.error("Error fetching data:", error));
-*/
-fetch(apiUrl)
+
+/*fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
         // Sort rooms by room number
