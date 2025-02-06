@@ -17,8 +17,8 @@ fetch(apiUrl)
 
         // Generate markers with consistent relative positions
         data.forEach((room, index) => {
-            var lat = 34.001 + (index * 12);  
-            var lon = -117.800 + (index * 32);
+            var lat = 34.001 + (index * 0.0002);  
+            var lon = -117.800 + (index * 0.0002);
             
             var marker = L.marker([lat, lon]).addTo(map)
                 .bindPopup(`<b>Room ${room.room}</b><br>Status: ${room.status}<br>Schedule: ${room.schedule}<br>${room.info}`);
