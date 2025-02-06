@@ -34,7 +34,7 @@ fetch(apiUrl)
             // Calculate position based on sorted index
             const baseLat = 34.001;
             const baseLon = -117.800;
-            const step = 0.0002; // Adjust step for spacing
+            const step = 0.02; // Adjust step for spacing
             const lat = baseLat - index * step;
             const lon = baseLon + index * step;
             
