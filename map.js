@@ -1,7 +1,7 @@
 const apiUrl = "https://script.google.com/macros/s/AKfycbzkREWXT4iUmrVWaW7yv3PVe5QY6PDKOQqDHMLNmLaj2JsWInsu7aiLtQUxoMEPxe2I/exec";
 
-// Initialize map with a more appropriate view centered on DBHS
-var map = L.map('map').setView([34.0015, -117.8102], 17);
+
+var map = L.map('map').setView([34.0015, -117.8102], 20);
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -17,8 +17,8 @@ fetch(apiUrl)
 
         // Generate markers with consistent relative positions
         data.forEach((room, index) => {
-            var lat = 34.001 + (index * 0.000002);  // Adjust position systematically
-            var lon = -117.800 + (index * 0.000002);
+            var lat = 34.001 + (index * 0.002);  
+            var lon = -117.800 + (index * 0.002);
             
             var marker = L.marker([lat, lon]).addTo(map)
                 .bindPopup(`<b>Room ${room.room}</b><br>Status: ${room.status}<br>Schedule: ${room.schedule}<br>${room.info}`);
