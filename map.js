@@ -23,7 +23,8 @@ fetch(apiUrl)
     })
     .catch(error => console.error("Error fetching data:", error));
 
-/*fetch(apiUrl)
+/*
+fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
         // Sort rooms by room number
@@ -41,3 +42,4 @@ fetch(apiUrl)
         });
     })
     .catch(error => console.error("Error fetching data:", error));
+*/
