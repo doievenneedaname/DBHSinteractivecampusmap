@@ -1,7 +1,7 @@
 const apiUrl = "https://script.google.com/macros/s/AKfycbzkREWXT4iUmrVWaW7yv3PVe5QY6PDKOQqDHMLNmLaj2JsWInsu7aiLtQUxoMEPxe2I/exec";
 
 // Initialize map
-var map = L.map('map').setView([34.0, -117.8], 16);
+var map = L.map('map').setView([55.0, -117.8], 16);
 
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
