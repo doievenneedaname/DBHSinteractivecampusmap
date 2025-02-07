@@ -1,6 +1,6 @@
 const apiUrl = "https://script.google.com/macros/s/AKfycbzkREWXT4iUmrVWaW7yv3PVe5QY6PDKOQqDHMLNmLaj2JsWInsu7aiLtQUxoMEPxe2I/exec";
 // Initialize map
-var map = L.map('map').setView([34.0, -117.8], 16);
+var map = L.map('map').setView([33.98319054884068, -117.83824471553699], 18);
 // Add OpenStreetMap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
@@ -11,8 +11,8 @@ fetch(apiUrl)
     .then(data => {
         data.forEach(room => {
             // Example room positions (replace with real coordinates)
-            var lat = 34.001 + Math.random() * 0.002; 
-            var lon = -117.800 + Math.random() * 0.002;
+            var lat = 33.98319054884068 + Math.random() * 0.002; 
+            var lon = -117.83824471553699 + Math.random() * 0.002;
             
             var marker = L.marker([lat, lon]).addTo(map)
                 .bindPopup(`<b>Room ${room.room}</b><br>Status: ${room.status}<br>Schedule: ${room.schedule}<br>${room.info}`);
