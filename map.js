@@ -11,8 +11,8 @@ fetch(apiUrl)
     .then(data => {
         data.forEach(room => {
             // Example room positions (replace with real coordinates)
-            var lat = 33.98319054884068 + Math.random() * 0.002; 
-            var lon = -117.83824471553699 + Math.random() * 0.002;
+            var lat = 33.98319054884068 + Math.random() * 0.0002; 
+            var lon = -117.83824471553699 + Math.random() * 0.0002;
             
             var marker = L.marker([lat, lon]).addTo(map)
                 .bindPopup(`<b>Room ${room.room}</b><br>Status: ${room.status}<br>Schedule: ${room.schedule}<br>${room.info}`);
